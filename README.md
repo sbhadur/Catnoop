@@ -1,2 +1,2 @@
 # NOOPS
-Playing around with NOOPS
+Creative outlet using NOOPS
