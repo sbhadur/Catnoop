@@ -57,11 +57,8 @@ def direct_shape():
             if (pen.xcor() > 800 or pen.xcor() < -800 or pen.ycor() > 365 or pen.ycor() < -385):
                 turtle.clear()
                 text = turtle.textinput("Game Over", "Please leave now: ")
-                if (text == "No"):
-                    direct_shape()
-                else:
-                    turtle.bye()
-                    return
+                turtle.bye()
+                return
             
 
 def makeBox(r):
