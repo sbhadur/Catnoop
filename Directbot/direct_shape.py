@@ -41,6 +41,7 @@ def direct_shape():
     
     while(1):
         colors = gc(6)
+        count = 0
         for pen in t:
             turtle.bgcolor(colors[0])
             direct = gd(10)
@@ -56,7 +57,10 @@ def direct_shape():
             turtle.bgcolor(colors[5])
             if (pen.xcor() > 800 or pen.xcor() < -800 or pen.ycor() > 365 or pen.ycor() < -385):
                 turtle.clear()
-                text = turtle.textinput("Game Over", "Please leave now: ")
+                if count == playernum:
+                    turtle.textinput("Game Over", "YOU WON! \nPlease leave now: ")
+                else:
+                    turtle.textinput("Game Over", "YOU LOST! \nPlease leave now: ")
                 turtle.bye()
                 return
             

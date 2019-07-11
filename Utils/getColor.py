@@ -34,5 +34,7 @@ def getColorCoord(width, height):
         color_coord = {'#FFFFFF' , 250, 250}
         return color_coord
    
-
+def hexToRGB(hex):
+    hex = hex[1::]
+    return tuple(int(hex[i:i+2], 16) for i in (0, 2, 4))
 
